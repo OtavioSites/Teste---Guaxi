@@ -1,0 +1,2193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    overflow-x: hidden;
+    
+    
+   
+
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+
+header{
+
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 0px;
+    transition: all 0.5s;
+    z-index: 10;
+    
+    
+    
+
+}
+#logo{
+    width: 50px;
+    border-radius: 50%;
+    transition: all 0.2s;
+}
+nav{
+    display: flex;
+    width: 30%;
+
+    justify-content: space-between;
+
+
+}
+nav > span > a{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 0px;
+    position: relative;
+    font-weight: bold;
+    transition:  all 0.2s ease;
+}
+nav > span > a:hover::before{
+    transform: scaleX(1);
+    
+}
+nav > span > a::before{
+    content: '';
+    position: absolute;
+    background-color: white;
+    bottom: 0;
+    height: 2px;
+    left: 0;
+    display: block;
+    transform: scaleX(0);
+    width: 100%;
+    
+
+
+    transition: all 0.2s ease;
+  
+   
+}
+a{
+    text-decoration: none;
+    
+}
+#banner{
+    background-image: linear-gradient(to left, transparent 0%, #003566 60%), url(assets/imgs/Banner.jpg);
+
+    width: 100%;
+    height: 80vh;
+    background-size: contain;
+    background-position: 100% 0px;
+    background-color: #003566;
+    background-repeat: no-repeat;
+    display: flex;
+    padding-left: 100px;
+    justify-content: center;
+   
+    flex-direction: column;
+
+}
+#titulobanner{
+    width:  50%;
+    height: 200px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#titulobanner > h1{
+    font-size: 3.5rem;
+    font-family: 'Geomanist';
+    font-weight: bolder;
+
+}
+#titulobanner > h2{
+    font-family: 'Simplifica';
+    letter-spacing: 5px;
+
+}
+#titulobanner > p{
+    font-family: 'Agdasima';
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+#conteudo{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#sobrenos{
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+#sobrenos > h1{
+    font-size: 2rem;
+    font-family: 'Geomanist';
+
+}
+#texto{
+    font-size: 1.5rem;
+    font-family: 'agdasima';
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+
+}
+#texto > p{
+    text-align: center;
+}
+
+
+#servicos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: start;
+    justify-content: space-evenly;
+    height: 100vh;
+    padding: 100px;
+
+}
+#servicos > div{
+    width: 100%;
+    height: 300px;
+    border: solid 2px transparent;
+  
+    
+    border-radius: 10px;
+    transition: all 1s;
+}
+#motoboy{
+    background:  linear-gradient(white, rgb(255, 255, 255)) padding-box, linear-gradient(to right, #13f78c, #0be6e6) border-box;
+}
+#motoboy > hr{
+    background: linear-gradient(to left, rgb(15, 236, 144), rgb(0, 247, 255));
+}
+
+#motorista{
+    background:  linear-gradient(white, rgb(255, 255, 255)) padding-box, linear-gradient(to right, #ff0e0e, #f8e00b) border-box;
+}
+#motorista > hr{
+    background: linear-gradient(to right, #ff0e0e, #f8e00b);
+}
+#sobrenos > hr{
+    width: 70%;
+    
+    color: #003566;
+    background-color: #003566;
+    height: 4px;
+    border: 0;
+
+    display: block;
+
+}
+.serv{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+
+
+}
+.serv > hr{
+    border: 0;
+    width: 100%;
+    height: 2px;
+    
+  
+}
+.serv > h1{
+    font-family: Roboto;
+    font-size: 1.6rem;
+}
+.serv > p{
+    font-family: Agdasima;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+
+#servico2{
+    display: flex;
+    width: 100%;
+   
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+
+
+}
+#servico2 > h1{
+    font-size: 3rem;
+    height: auto;
+    overflow: visible;
+    font-family: geomanist;
+    letter-spacing: 2px;
+
+}
+#serv2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 100%;
+    border-radius: 5px;
+
+}
+.transportes{
+    display: flex;
+    width: 500px;
+    height: 60%;
+    transition: all 2s;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+  
+    background-color: #003566;
+ 
+    flex-direction: column;
+
+    
+}
+
+#car, #mot{
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+}
+
+#car{
+    background-image: linear-gradient(to right, transparent 30%, #003566 100%), url(assets/imgs/EmpresarioNoCarro.jpg);
+    background-position-x: 40%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+  
+
+}
+#mot{
+
+    transition: all 2s;
+    background:  linear-gradient(to left, transparent 30%, #003566 100%), url(assets/imgs/MotobotRapido.jpg);
+    background-repeat: no-repeat;
+  
+    background-size: cover;
+    background-position-x: 60%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+    
+
+}
+
+
+#mot:hover{
+    background-position-x: 70%;
+    cursor: pointer;
+    filter: opacity(70%);
+    transition: all 2s;
+    
+}
+#car:hover{
+   
+    filter: opacity(70%);
+    background-position-x: 50%;
+    transition: all 2s;
+    
+    cursor: pointer;
+
+}
+.textoserv{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+    
+}
+.textoserv > h2{
+    font-family: Roboto;
+    font-size: 1.5rem;
+  
+}
+
+.textoserv > p{
+    font-family: simplifica;
+    font-size: 1.5rem;
+    font-weight: bold;    
+ 
+    transition-delay: 1s;
+    height: 30px;
+    
+    
+    transition: all 1s ease-in-out;
+   
+    width: 0px;
+}
+.textoserv > p::before{
+    content: '';
+    position: absolute;
+    top: 49%;
+    width: 3px;
+    left: 10px;
+   
+    height: 0px;
+    transition: 0.5s all 0.7s ease-out;
+}
+.textoserv > p::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    left: 10px;
+    opacity: 0;
+    text-align: center;
+    height: 30px;
+    transition: all 1s ease-in-out;
+    overflow: hidden;
+}
+
+
+
+#car:hover .textoserv > p::before{
+    content: '';
+ 
+    width: 3px;
+    
+    
+    top: 49%;
+    height: 40px;
+    background-color: white;
+
+    transition: all 0.5s;
+  
+}
+
+#mot:hover .textoserv > p::before{
+    content: '';
+ 
+    width: 3px;
+    
+    
+    top: 49%;
+    height: 40px;
+    background-color: white;
+
+    transition: all 0.5s;
+  
+}
+#mot:hover .textoserv > p::after{
+    content: 'Motofrete para coletas rápidas e pequenas' ;
+    overflow: hidden;
+
+    opacity: 1;
+    width: 500px;
+    left: 10px;
+    transition: all 1s;
+   
+    
+}
+
+#car:hover .textoserv > p::after{
+    content: 'Motorista para transportes executivos e coletas' ;
+    overflow: hidden;
+
+    opacity: 1;
+    width: 500px;
+    left: 10px;
+    transition: all 1s;
+  
+   
+    
+}
+#textMot::after{
+    content: 'Motofrete para coletas pequenas e  rápidas';
+}
+#textCar::after{
+    content: 'Motorista para transportes executivos e coletas';
+}
+
+#veiculos{
+
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    gap: 150px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+   
+
+}
+.veiculo{
+    width: 500px;
+    
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 5%;
+    text-align: center;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    
+  
+   
+  
+
+
+}
+.veiculo img {
+    width: calc(100% + 30%);
+    height: auto;
+    margin-top: 50px;
+    object-fit: contain;
+    flex-grow: 1;
+}
+#FlexCont{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 80%;
+  
+    
+    width: 100%;
+    
+   
+}
+#FlexCont > hr{
+    border: 0;
+    height: 90%;
+    width: 3px;
+    
+    background-color: #003566;
+}
+#veiculos > h1{
+  
+
+  
+    font-family: 'roboto';
+    font-size: 3rem;
+    font-weight: bold;
+ 
+}
+
+#picape > img{
+    width: 100%;
+}
+#moto > img{
+    width: 60%;
+}
+#carro > img{
+    width: calc(100% + 30%);
+    
+   
+    
+   
+
+}
+
+#picape:hover img{
+    width: 110%;
+}
+#moto:hover img{
+    width: 70%;
+}
+#carro:hover img{
+    width: calc(100% + 40%);
+    position: relative;
+
+}
+.titulocarro {
+    position: absolute;
+    top: 10px; /* Ajuste conforme necessário */
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    font-family: Geomanist;
+    user-select: none;
+    gap: 4%;
+}
+
+
+.titulocarro > hr{
+    border: 0;
+    margin: auto;
+    transform: scaleY(1);
+    background-color: #003566;
+    height: 3px;
+    width: 90px;
+}
+
+.veiculo > img{
+    
+    
+    filter: grayscale(1);
+    
+
+    
+    user-select: none;
+    -webkit-user-drag: none;
+    transition: all 1s;
+    
+    
+}
+.veiculo:hover img{
+    filter: grayscale(0);
+    transition: all 1s;
+   
+}
+#contatenos{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 100px;
+    gap: 20%;
+
+
+}
+#TituloContate{
+    font-size: 3rem;
+    height: 10%;
+    width: auto;
+    
+    overflow: visible;
+    position: relative;
+    font-family: 'Geomanist';
+    
+    
+}
+#TituloContate > hr{
+    border: 0;
+    overflow: visible;
+    height: 3px;
+    width: calc(100% + 400%);
+    background-color: #003566;
+   
+    
+   
+}
+
+#contatos{
+    display: flex;
+    gap: 30px;
+    overflow: visible;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 50%;
+    height: 90%;
+}
+.logoapp{
+    width: 50px;
+    
+    object-fit: contain;
+   
+}
+#redesociais{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+    align-items: center;
+    height: 90%;
+    width: 100%;
+}
+.redes{
+    display: flex;
+
+    gap: 10px;
+    font-size: 1.5rem;
+    font-family: 'Roboto';
+    letter-spacing: 2px;
+    align-items: center;
+  
+}
+.redes > a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logoapp[src^="assets/imgs/Logos app/Linkedin.webp"] {
+    width: 80px;
+}
+
+#local{
+    width: 50%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: column;
+
+}
+
+#local > hr{
+    border: 0;
+    height: 2.5px;
+    width: 70%;
+    background-color: #003566;
+}
+
+#local > h1{
+    font-size: 2rem;
+    font-family: geomanist;
+    
+}
+
+#local > iframe{
+    border-radius: 20px;
+    width: 600px;
+    height: 450px;
+}
+
+footer{
+    display: flex;
+    height: 40vh;
+    width: 100%;
+    color: white;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    background-color: #003566;
+}
+#logoFoot{
+
+    width: auto;
+    height: auto;
+}
+#logoFoot > img{
+    width: 200px;
+    border-radius: 20px;
+}
+#sobreFooter{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+#sobreFooter > h1{
+    font-size: 3rem;
+    font-family: geomanist;
+}
+#sobreFooter > p{
+    font-size: 1.5rem;
+    font-family: simplifica;
+}
+
+#redesociaisFooter{
+    display: flex;
+    height: 30%;
+    gap: 10px;
+    
+    align-items: end;
+}
+
+#navFoot{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   
+
+}
+#navFoot > span > a{
+    color: white;
+    text-decoration: none;
+}
+#navFoot > span{
+    font-size: 1.2rem;
+    font-family: geomanist
+}
+
+
+
+@media (max-height: 950px) {
+    #local{
+        width: 50%;
+        
+        height: 100%;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: end;
+        gap: 30px;
+        flex-direction: column;
+    
+    }
+    #local > iframe{
+        border-radius: 20px;
+        width: 600px;
+        height: 450px;
+    }
+    
+    #local > hr{
+        border: 0;
+        height: 2.5px;
+        width: 70%;
+        background-color: #003566;
+    }
+    
+    #local > h1{
+        font-size: 2rem;
+        font-family: geomanist;
+        
+    }
+   
+    
+}
+@media (max-width: 1400px) and (max-height: 850px) {
+    #local{
+        width: 50%;
+        
+        height: 100%;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: end;
+        gap: 30px;
+        flex-direction: column;
+    
+    }
+    #local > iframe{
+        border-radius: 20px;
+        width: 600px;
+        height: 450px;
+    }
+    
+    #local > hr{
+        border: 0;
+        height: 2.5px;
+        width: 70%;
+        background-color: #003566;
+    }
+    
+    #local > h1{
+        font-size: 2rem;
+        font-family: geomanist;
+        
+    }
+    #local > iframe{
+        border-radius: 20px;
+        width: 400px;
+        height: 250px;
+    }
+    #conteudo{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    #sobrenos{
+        width: 80%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    #sobrenos > h1{
+        font-size: 2rem;
+        font-family: 'Geomanist';
+    
+    }
+    #texto{
+        font-size: 1.5rem;
+        font-family: 'agdasima';
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    
+    }
+    #texto > p{
+        text-align: center;
+    }
+    #banner{
+        background-image: linear-gradient(to left, transparent 0%, #003566 10%), url(assets/imgs/Banner.jpg);
+        width: 100%;
+        height: 50vh;
+        background-size: cover;
+        background-position: 100% 0px;
+        background-color: #003566;
+        background-repeat: no-repeat;
+        display: flex;
+        padding-left: 100px;
+        justify-content: center;
+       
+        flex-direction: column;
+    
+    }
+    
+    
+}
+
+
+
+@media (max-width: 1617px) {
+    #banner{
+        background-image: linear-gradient(to left, transparent 0%, #003566 40%), url(assets/imgs/Banner.jpg);
+        width: 100%;
+        height: 40vh;
+        background-size: contain;
+        background-position: 100% 0px;
+        background-color: #003566;
+        background-repeat: no-repeat;
+        display: flex;
+        padding-left: 100px;
+        justify-content: center;
+       
+        flex-direction: column;
+    
+    }
+}
+@media (max-width: 1200px) {
+    #local > h1{
+        font-size: 1.5rem;
+        font-family: geomanist;
+        
+    }
+    #titulobanner{
+        width:  60%;
+        height: 250px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+    }
+    #titulobanner > h1{
+        font-size: 3.5rem;
+        font-family: 'Geomanist';
+        font-weight: bolder;
+    
+    }
+    #titulobanner > h2{
+        font-family: 'Simplifica';
+        letter-spacing: 5px;
+    
+    }
+    #titulobanner > p{
+        font-family: 'Agdasima';
+        font-size: 1.5rem;
+        font-weight: 400;
+        width: 100%;
+        height: auto;
+    }
+    nav{
+        display: flex;
+        width: 40%;
+    
+        justify-content: space-between;
+    
+    
+    }
+    #sobrenos{
+        width: 80%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+}
+@media (max-width: 1020px) {
+    #contatenos{
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        gap: 20%;
+    
+    
+    
+    }
+    #TituloContate{
+        font-size: 3rem;
+        
+        font-family: 'Geomanist';
+        height: 100px;
+        
+        
+    }
+    #TituloContate > hr{
+        border: 0;
+        height: 3px;
+        width: 100%;
+        background-color: #003566;
+    }
+    
+    #contatos{
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 90%;
+    }
+    .logoapp{
+        width: 50px;
+        
+        object-fit: contain;
+       
+    }
+    #redesociais{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+        align-items: center;
+        height: 90%;
+        
+        width: 100%;
+    }
+    .redes{
+        display: flex;
+        
+        gap: 10px;
+        font-size: 1.5rem;
+        font-family: 'Roboto';
+        letter-spacing: 2px;
+        align-items: center;
+      
+    }
+    .redes > a{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .logoapp[src^="assets/imgs/Logos app/Linkedin.webp"] {
+        width: 80px;
+    }
+    
+    #local{
+        width: 50%;
+        height: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        flex-direction: column;
+      
+    
+    }
+    
+    #local > hr{
+        border: 0;
+        height: 10px;
+        width: 70%;
+        background-color: #003566;
+    }
+    
+    #local > h1{
+        font-size: 2rem;
+        font-family: geomanist;
+        height: 100px;
+        
+    }
+    
+    #local > iframe{
+        border-radius: 20px;
+    }
+    #servico2{
+        display: flex;
+        width: 100%;
+       
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    
+    
+    }
+    #servico2 > h1{
+        font-size: 2rem;
+        font-family: geomanist;
+        letter-spacing: 2px;
+    
+    }
+    #serv2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+    
+    }
+    .transportes{
+        display: flex;
+        width: 100%;
+        height: 60%;
+        transition: all 2s;
+        justify-content: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: center;
+      
+        background-color: #003566;
+     
+        flex-direction: column;
+    
+        
+    }
+    
+    #car, #mot{
+        background-repeat: no-repeat;
+        background-size: cover;
+     
+    }
+    
+    #car{
+        background-image: linear-gradient(to right, transparent 30%, #003566 100%), url(assets/imgs/EmpresarioNoCarro.jpg);
+        background-position-x: 40%;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        
+      
+    
+    }
+    #mot{
+    
+        transition: all 2s;
+        background:  linear-gradient(to left, transparent 30%, #003566 100%), url(assets/imgs/MotobotRapido.jpg);
+        background-repeat: no-repeat;
+      
+        background-size: cover;
+        background-position-x: 60%;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        
+        
+    
+    }
+    
+    
+    #mot:hover{
+        background-position-x: 70%;
+        cursor: pointer;
+        filter: opacity(70%);
+        transition: all 2s;
+        
+    }
+    #car:hover{
+       
+        filter: opacity(70%);
+        background-position-x: 50%;
+        transition: all 2s;
+        
+        cursor: pointer;
+    
+    }
+    .textoserv{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        justify-content: center;
+        align-items: center;
+    
+        overflow: hidden;
+        
+    }
+    .textoserv > h2{
+        font-family: Roboto;
+        font-size: 1.5rem;
+      
+    }
+    
+    .textoserv > p{
+        font-family: simplifica;
+        font-size: 1.5rem;
+        font-weight: bold;    
+     
+        transition-delay: 1s;
+        height: 30px;
+        
+        
+        transition: all 1s ease-in-out;
+       
+        width: 0px;
+    }
+    .textoserv > p::before{
+        content: '';
+        position: absolute;
+        top: 49%;
+        width: 3px;
+        left: 10px;
+       
+        height: 0px;
+        transition: 0.5s all 0.7s ease-out;
+    }
+    .textoserv > p::after{
+        content: '';
+        position: absolute;
+        width: 0;
+        left: 10px;
+        opacity: 0;
+        text-align: center;
+        height: 30px;
+        transition: all 1s ease-in-out;
+        overflow: hidden;
+    }
+    
+    
+    
+    #car:hover .textoserv > p::before{
+        content: '';
+     
+        width: 3px;
+        
+        
+        top: 49%;
+        height: 40px;
+        background-color: white;
+    
+        transition: all 0.5s;
+      
+    }
+    
+    #mot:hover .textoserv > p::before{
+        content: '';
+     
+        width: 3px;
+        
+        
+        top: 49%;
+        height: 40px;
+        background-color: white;
+    
+        transition: all 0.5s;
+      
+    }
+    #mot:hover .textoserv > p::after{
+        content: 'Motofrete para coletas rápidas e pequenas' ;
+        overflow: hidden;
+        text-align: center;
+        opacity: 1;
+        width: 100%;
+        left: 10px;
+        transition: all 1s;
+       
+        
+    }
+    
+    #car:hover .textoserv > p::after{
+        content: 'Motorista para transportes executivos e coletas' ;
+        overflow: hidden;
+    
+        opacity: 1;
+        width: 100%;
+        left: 10px;
+        transition: all 1s;
+      
+       
+        
+    }
+    #textMot::after{
+        content: 'Motofrete para coletas pequenas e  rápidas';
+    }
+    #textCar::after{
+        content: 'Motorista para transportes executivos e coletas';
+    }
+}
+@media (max-width: 850px) {
+    #servico2 > h1{
+        font-size: 3rem;
+        height: auto;
+        margin-bottom: 20%;
+        overflow: visible;
+        font-family: geomanist;
+        letter-spacing: 2px;
+    
+    }
+    #veiculos{
+
+        display: flex;
+        height: 200vh;
+        width: 100%;
+        gap: 150px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;    
+       
+    
+    }
+    .veiculo{
+        width: auto;
+        height: 100%;
+        
+        display: flex;
+        justify-content: center;
+        padding-bottom: 5%;
+        text-align: center;
+        position: relative;
+        align-items: center;
+        flex-direction: column;
+        
+      
+       
+      
+    
+    
+    }
+    .veiculo img {
+        height: 100%;
+ 
+        margin-top: 50px;
+        object-fit: contain;
+        flex-grow: 0;
+    }
+    #FlexCont{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      
+        
+        width: 100%;
+        
+       
+    }
+    #FlexCont > hr{
+        border: 0;
+        height: 10px;
+        width: 90%;
+        
+        background-color: #003566;
+    }
+    #veiculos > h1{
+        overflow: visible;
+        margin-top: 20%;
+       
+        font-family: 'roboto';
+        font-size: 3rem;
+        font-weight: bold;
+     
+    }
+    
+    #picape > img{
+        height: 57%;
+    }
+    #moto > img{
+        height: 100%;
+    }
+    #carro > img{
+        width: calc(100%);
+        
+        
+       
+        
+       
+    
+    }
+    
+    #picape:hover img{
+        width: 110%;
+    }
+    #moto:hover img{
+        width: 70%;
+    }
+    #carro:hover img{
+        width: calc(100% + 40%);
+        position: relative;
+    
+    }
+    .titulocarro {
+        position: absolute;
+        top: 10px; /* Ajuste conforme necessário */
+        width: 200%;
+        
+      
+     
+        margin: 0;
+        font-family: Geomanist;
+        user-select: none;
+        gap: 4%;
+    }
+    
+    
+    .titulocarro > hr{
+        border: 0;
+        margin: none;
+        transform: scaleX(2);
+        background-color: #003566;
+        height: 3px;
+    }
+    
+    .veiculo > img{
+        
+        
+        filter: grayscale(1);
+        
+    
+        
+        user-select: none;
+        -webkit-user-drag: none;
+        transition: all 1s;
+        
+        
+    }
+    .veiculo:hover img{
+        filter: grayscale(0);
+        transition: all 1s;
+       
+    }
+    #local > iframe{
+        border-radius: 20px;
+       width: 100%                      ;
+    }
+    #banner{
+        background-image: linear-gradient(to left, transparent 0%, #003566 60%), url(assets/imgs/Banner.jpg);
+    
+        width: 100%;
+        height: 50vh;
+        background-size: contain 100%;
+        background-position: 100% 0px;
+        background-color: #003566;
+        background-repeat: no-repeat;
+        display: flex;
+        padding-left: 0;
+        justify-content: center;
+       
+        flex-direction: column;
+    
+    }
+    #local > h1{
+        font-size: 1.5rem;
+        font-family: geomanist;
+        
+    }
+    #titulobanner{
+        width:  100%;
+      
+        text-align: center;
+        height: 250px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+    }
+    #titulobanner > h1{
+        font-size: 3.5rem;
+        font-family: 'Geomanist';
+        font-weight: bolder;
+    
+    }
+    #titulobanner > h2{
+        font-family: 'Simplifica';
+        letter-spacing: 5px;
+    
+    }
+    #titulobanner > p{
+        font-family: 'Agdasima';
+        font-size: 1.5rem;
+        font-weight: 400;
+        width: 100%;
+        height: auto;
+    }
+    nav{
+        display: flex;
+        width: 40%;
+    
+        justify-content: space-between;
+    
+    
+    }
+    #sobrenos{
+        width: 80%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    #servico2{
+        display: flex;
+        width: 100%;
+       
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    
+    
+    }
+    #servico2 > h1{
+        font-size: 2rem;
+        font-family: geomanist;
+        letter-spacing: 2px;
+    
+    }
+    #serv2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    
+    
+    }
+    .transportes{
+        display: flex;
+        width: 100%;
+        height: 60%;
+        transition: all 2s;
+        justify-content: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: center;
+      
+        background-color: #003566;
+     
+        flex-direction: column;
+    
+        
+    }
+    
+    #car, #mot{
+        background-repeat: no-repeat;
+        background-size: cover;
+     
+    }
+    
+    #car{
+        background-image: linear-gradient(to right, transparent 30%, #003566 100%), url(assets/imgs/EmpresarioNoCarro.jpg);
+        background-position-x: 40%;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        
+      
+    
+    }
+    #mot{
+    
+        transition: all 2s;
+        background:  linear-gradient(to left, transparent 30%, #003566 100%), url(assets/imgs/MotobotRapido.jpg);
+        background-repeat: no-repeat;
+      
+        background-size: cover;
+        background-position-x: 60%;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        
+        
+    
+    }
+    
+    
+    #mot:hover{
+        background-position-x: 70%;
+        cursor: pointer;
+        filter: opacity(70%);
+        transition: all 2s;
+        
+    }
+    #car:hover{
+       
+        filter: opacity(70%);
+        background-position-x: 50%;
+        transition: all 2s;
+        
+        cursor: pointer;
+    
+    }
+    .textoserv{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        justify-content: center;
+        align-items: center;
+    
+        overflow: hidden;
+        
+    }
+    .textoserv > h2{
+        font-family: Roboto;
+        font-size: 1.5rem;
+      
+    }
+    
+    .textoserv > p{
+        font-family: simplifica;
+        font-size: 1.5rem;
+        font-weight: bold;    
+     
+        transition-delay: 1s;
+        height: 30px;
+        
+        
+        transition: all 1s ease-in-out;
+       
+        width: 0px;
+    }
+    .textoserv > p::before{
+        content: '';
+        position: absolute;
+        top: 49%;
+        width: 3px;
+        left: 10px;
+       
+        height: 0px;
+        transition: 0.5s all 0.7s ease-out;
+    }
+    .textoserv > p::after{
+        content: '';
+        position: absolute;
+        width: 0;
+        left: 10px;
+        opacity: 0;
+        text-align: center;
+        height: 30px;
+        transition: all 1s ease-in-out;
+        overflow: hidden;
+    }
+    
+    
+    
+    #car:hover .textoserv > p::before{
+        content: '';
+     
+        width: 3px;
+        
+        
+        top: 49%;
+        height: 40px;
+        background-color: white;
+    
+        transition: all 0.5s;
+      
+    }
+    
+    #mot:hover .textoserv > p::before{
+        content: '';
+     
+        width: 3px;
+        
+        
+        top: 49%;
+        height: 40px;
+        background-color: white;
+    
+        transition: all 0.5s;
+      
+    }
+    #mot:hover .textoserv > p::after{
+        content: 'Motofrete para coletas rápidas e pequenas' ;
+        overflow: hidden;
+        text-align: center;
+        opacity: 1;
+        width: 100%;
+        left: 10px;
+        transition: all 1s;
+       
+        
+    }
+    
+    #car:hover .textoserv > p::after{
+        content: 'Motorista para transportes executivos e coletas' ;
+        overflow: hidden;
+    
+        opacity: 1;
+        width: 100%;
+        left: 10px;
+        transition: all 1s;
+      
+       
+        
+    }
+    #textMot::after{
+        content: 'Motofrete para coletas pequenas e  rápidas';
+    }
+    #textCar::after{
+        content: 'Motorista para transportes executivos e coletas';
+    }
+}
+@media (max-width: 800px) {
+    nav{
+    display: flex;
+    width: 70%;
+
+    justify-content: space-between;
+
+
+}
+nav > span > a{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 0px;
+    position: relative;
+    font-weight: bold;
+    transition:  all 0.2s ease;
+}
+nav > span > a:hover::before{
+    transform: scaleX(1);
+    
+}
+nav > span > a::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    left: 0;
+    display: block;
+    transform: scaleX(0);
+    width: 100%;
+    
+
+
+    transition: all 0.2s ease;
+  
+   
+}
+    #banner{
+        background-image: linear-gradient(to bottom, transparent 0%, #003566 80%), url(assets/imgs/Banner.jpg);
+    
+        width: 100%;
+        height: 50vh;
+        background-size: cover;
+        background-position: 100% 0px;
+        background-color: #003566;
+        background-repeat: no-repeat;
+        display: flex;
+        padding-left: 0;
+        justify-content: center;
+       
+        flex-direction: column;
+    
+    }
+    #local > h1{
+        font-size: 1.5rem;
+        font-family: geomanist;
+        
+    }
+    #titulobanner{
+        width:  100%;
+        padding: 20px;
+        text-align: center;
+        height: 250px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+    }
+    #titulobanner > h1{
+        font-size: 3rem;
+        font-family: 'Geomanist';
+        font-weight: bolder;
+    
+    }
+    #titulobanner > h2{
+        font-family: 'Simplifica';
+        letter-spacing: 5px;
+    
+    }
+    #titulobanner > p{
+        font-family: 'Agdasima';
+        font-size: 1.5rem;
+        font-weight: 400;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 700px) {
+    footer{
+        display: flex;
+        height: 40vh;
+        width: 100%;
+        color: white;
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: center;
+        background-color: #003566;
+    }
+    #logoFoot{
+    
+        width: auto;
+        height: auto;
+    }
+    #logoFoot > img{
+        width: 100px;
+        border-radius: 20px;
+    }
+    #sobreFooter{
+        
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+    }
+    #sobreFooter > h1{
+        font-size: 2rem;
+        font-family: geomanist;
+    }
+    #sobreFooter > p{
+        font-size: 1rem;
+        font-family: simplifica;
+    }
+    
+    #redesociaisFooter{
+        display: flex;
+        height: auto;
+        
+        gap: 10px;
+        
+        align-items: end;
+    }
+    
+    #navFoot{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+       
+    
+    }
+    #navFoot > span > a{
+        color: white;
+        text-decoration: none;
+    }
+    #navFoot > span{
+        font-size: 1.2rem;
+        font-family: geomanist
+    }
+    
+}
+
+@media (max-width: 440px) {
+    header{
+
+        width: 100%;
+        height: 7vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: fixed;
+        top: 0px;
+        transition: all 0.5s;
+        z-index: 10;
+        
+        
+        
+    
+    }
+    #logo{
+        width: 35px;
+        border-radius: 50%;
+        transition: all 0.2s;
+    }
+    nav{
+        display: flex;
+        width: 80%;
+    
+        justify-content: space-between;
+        
+    
+    }
+    nav > span > a{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+        letter-spacing: 0px;
+        position: relative;
+        font-weight: bold;
+        transition:  all 0.2s ease;
+    }
+    nav > span > a:hover::before{
+        transform: scaleX(1);
+        
+    }
+    nav > span > a::before{
+        content: '';
+        position: absolute;
+        background-color: white;
+        bottom: 0;
+        height: 2px;
+        left: 0;
+        display: block;
+        transform: scaleX(0);
+        width: 100%;
+        
+    
+    
+        transition: all 0.2s ease;
+      
+       
+    }
+    #conteudo{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    }
+    #sobrenos{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    }
+    #sobrenos > h1{
+    font-size: 1.7rem;
+    font-family: 'Geomanist';
+
+    }
+    #texto{
+    font-size: 1.3rem;
+    font-family: 'agdasima';
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+
+    }
+    #texto > p{
+    text-align: center;
+    }
+    #banner{
+        background-image: linear-gradient(to bottom, transparent 0%, #003566 80%), url(assets/imgs/Banner.jpg);
+    
+        width: 100%;
+        height: 50vh;
+        background-size: cover;
+        background-position: 100% 0px;
+        background-color: #003566;
+        background-repeat: no-repeat;
+        display: flex;
+        padding-left: 0;
+        justify-content: center;
+       
+        flex-direction: column;
+    
+    }
+    #local > h1{
+        font-size: 1.5rem;
+        font-family: geomanist;
+        
+    }
+    #titulobanner{
+        width:  100%;
+        padding: 20px;
+        text-align: center;
+
+        height: 250px;
+        color: white;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+    }
+    #titulobanner > h1{
+        font-size: 2rem;
+        
+        font-family: 'Geomanist';
+        font-weight: bolder;
+    
+    }
+    #titulobanner > h2{
+        font-size: 1rem;
+        font-family: 'Simplifica';
+        letter-spacing: 5px;
+    
+    }
+    #titulobanner > p{
+        font-family: 'Agdasima';
+        font-size: 1.2rem;
+        font-weight: 400;
+        width: 90%;
+        
+    }
+}
+
+
+@media (max-width: 390px) {
+    #navFoot{
+        display: flex;
+       
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+       
+        gap: 20px;
+       
+    
+    }
+    #navFoot > span > a{
+        color: white;
+        text-decoration: none;
+    }
+    #navFoot > span{
+        font-size: 1.2rem;
+        font-family: geomanist
+    }
+    
+    #redesociaisFooter{
+        display: flex;
+        height: auto;
+  
+        
+        gap: 10px;
+        
+        align-items: end;
+    }
+    footer{
+        display: flex;
+        height: 50vh;
+        gap: 30px;
+        width: 100%;
+        color: white;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        background-color: #003566;
+    }
+    #sobreFooter{
+        text-align: center;
+        width: 50%;
+        height: 60%;
+   
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: start;
+        gap: 30px;
+    }
+
+    #car{
+        background-image: linear-gradient(to top, transparent 30%, #003566 100%), url(assets/imgs/EmpresarioNoCarro.jpg);
+        background-position-x: 40%;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        
+      
+    
+    }
+    #mot{
+    
+        transition: all 2s;
+        background:  linear-gradient(to bottom, transparent 30%, #003566 100%), url(assets/imgs/MotobotRapido.jpg);
+        background-repeat: no-repeat;
+      
+        background-size: cover;
+        background-position-x: 60%;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        
+        
+    
+    }
+    #serv2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0px;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    
+    
+    }
+}
+@media (max-height: 800px), (max-width: 650px) {
+    header{
+
+        width: 100%;
+        height: 7vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: fixed;
+        top: 0px;
+        transition: all 0.5s;
+        z-index: 10;
+        
+        
+        
+    
+    }
+    #logo{
+        width: 35px;
+        border-radius: 50%;
+        transition: all 0.2s;
+    }
+    nav{
+        display: flex;
+        width: 80%;
+    
+        justify-content: space-between;
+        
+    
+    }
+    nav > span > a{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+        letter-spacing: 0px;
+        position: relative;
+        font-weight: bold;
+        transition:  all 0.2s ease;
+    }
+    nav > span > a:hover::before{
+        transform: scaleX(1);
+        
+    }
+    nav > span > a::before{
+        content: '';
+        position: absolute;
+        background-color: white;
+        bottom: 0;
+        height: 2px;
+        left: 0;
+        display: block;
+        transform: scaleX(0);
+        width: 100%;
+        
+    
+    
+        transition: all 0.2s ease;
+      
+       
+    }
+    #conteudo{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        }
+        #sobrenos{
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: relative;
+        align-items: center;
+        }
+        #sobrenos > h1{
+        font-size: 1.7rem;
+        font-family: 'Geomanist';
+    
+        }
+        #texto{
+        font-size: 1.3rem;
+        font-family: 'agdasima';
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    
+        }
+        #texto > p{
+        text-align: center;
+        }
+         
+    #local{
+        width: 100%;
+        height: 100%;
+     
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        overflow: visible;
+        flex-direction: column;
+        
+    
+    }
+    
+    #local > hr{
+        border: 0;
+        height: 3px;
+        
+        
+        width: 70%;
+        background-color: #003566;
+    }
+    
+    #local > h1{
+        font-size: 1rem;
+       
+        font-family: geomanist;
+        width: inherit;
+       height: auto;
+  
+        
+    }
+    
+    #local > iframe{
+        border-radius: 20px;
+        
+    }
+    #contatenos{
+        width: 100%;
+        height: 150vh;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 100px;
+       
+        gap: 20%;
+    
+    
+    }
+}
+
+
+
+
+
+@font-face {
+    font-family: 'Geomanist';
+    src: url(assets/fonts/Geomanist-Regular.otf);
+}
+@font-face {
+    font-family: 'Simplifica';
+    src: url(assets/fonts/SIMPLIFICA\ Typeface.ttf);
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(assets/fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: 'Agdasima';
+    src: url(assets/fonts/Agdasima-Regular.ttf);
+}
