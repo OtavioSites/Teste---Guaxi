@@ -822,6 +822,7 @@ footer{
         flex-direction: column;
     
     }
+
     #texto > p{
         text-align: center;
     }
@@ -840,7 +841,35 @@ footer{
         flex-direction: column;
     
     }
+     #contatenos{
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      
+        padding: 10px;
+        gap: 20%;
     
+    
+    
+    }
+    #TituloContate{
+        font-size: 3rem;
+        
+        font-family: 'Geomanist';
+        height: 100px;
+        
+        
+    }
+    #TituloContate > hr{
+        
+        border: 0;
+        height: 3px;
+        width: 100%;
+        background-color: #003566;
+    }
     
 }
 
@@ -864,6 +893,7 @@ footer{
     }
 }
 @media (max-width: 1200px) {
+    
     #local > h1{
         font-size: 1.5rem;
         font-family: geomanist;
@@ -938,6 +968,7 @@ footer{
         
     }
     #TituloContate > hr{
+        
         border: 0;
         height: 3px;
         width: 100%;
@@ -950,7 +981,7 @@ footer{
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        width: 100%;
+        width: 100vw;
         
         height: 90%;
     }
@@ -1638,6 +1669,7 @@ footer{
     }
 }
 @media (max-width: 800px) {
+
     nav{
     display: flex;
     width: 70%;
@@ -1731,7 +1763,7 @@ nav > span > a::before{
    
     footer{
         display: flex;
-        height: 40vh;
+        height: 60vh;
         width: 100%;
         color: white;
         justify-content: space-around;
@@ -1794,6 +1826,58 @@ nav > span > a::before{
 }
 
 @media (max-width: 440px) {
+    #navFoot{
+        display: flex;
+       
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+       
+        gap: 20px;
+       
+    
+    }
+    #navFoot > span > a{
+        color: white;
+        text-decoration: none;
+    }
+    #navFoot > span{
+        font-size: 1.2rem;
+        font-family: geomanist
+    }
+    
+    #redesociaisFooter{
+        display: flex;
+        height: auto;
+  
+        
+        gap: 10px;
+        
+        align-items: end;
+    }
+    footer{
+        display: flex;
+        height: 70vh;
+        gap: 30px;
+        width: 100%;
+        color: white;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        background-color: #003566;
+    }
+    #sobreFooter{
+        text-align: center;
+        width: 100%;
+        height: 60%;
+   
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: start;
+        gap: 30px;
+    }
+
     header{
 
         width: 100%;
@@ -1942,6 +2026,22 @@ nav > span > a::before{
 
 
 @media (max-width: 390px) {
+    #banner{
+        background-image: linear-gradient(to bottom, transparent 0%, #003566 80%), url(assets/imgs/Banner.jpg);
+    
+        width: 100%;
+        height: 50vh;
+        background-size: cover;
+        background-position: 100% 0px;
+        background-color: #003566;
+        background-repeat: no-repeat;
+        display: flex;
+        padding-left: 0;
+        justify-content: center;
+       
+        flex-direction: column;
+    
+    }
     #navFoot{
         display: flex;
        
@@ -1973,7 +2073,7 @@ nav > span > a::before{
     }
     footer{
         display: flex;
-        height: 50vh;
+        height: 70vh;
         gap: 30px;
         width: 100%;
         color: white;
@@ -2029,10 +2129,57 @@ nav > span > a::before{
     
     }
 }
-@media (max-height: 800px), (max-width: 650px) {
-    #contatos{
-        width: 100vw;
+@media (max-height: 800px) and (max-width: 650px) {
+    #banner{
+        background-image: linear-gradient(to left, transparent 0%, #003566 60%), url(assets/imgs/Banner.jpg);
+    
+        width: 100%;
+        height: 50vh;
+        background-size: contain;
+        background-position: 100% 0px;
+        background-color: #003566;
+        background-repeat: no-repeat;
+        display: flex;
+        padding-left: 0;
+        justify-content: center;
+       
+        flex-direction: column;
+    
     }
+  
+    #titulobanner{
+        width:  100%;
+        padding: 20px;
+        text-align: start;
+        height: 250px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+    }
+    #titulobanner > h1{
+        font-size: 2rem;
+        font-family: 'Geomanist';
+        font-weight: bolder;
+    
+    }
+    #titulobanner > h2{
+        font-family: 'Simplifica';
+        letter-spacing: 5px;
+    
+    }
+    #titulobanner > p{
+        font-family: 'Agdasima';
+        font-size: 1.3rem;
+        font-weight: 400;
+        width: 100%;
+        height: auto;
+    }
+    footer{
+        height: 70vh;
+    }
+   
     #redesociais{
         display: flex;
         flex-direction: column;
@@ -2186,8 +2333,59 @@ nav > span > a::before{
     
     }
 }
+@media (max-height: 650px) {
+        #banner{
+        background-image: linear-gradient(to bottom, transparent 0%, #003566 80%), url(assets/imgs/Banner.jpg);
+    
+        width: 100%;
+        height: 70vh;
+        background-size: cover;
+        background-position: 100% 0px;
+        background-color: #003566;
+        background-repeat: no-repeat;
+        display: flex;
+        padding-left: 0;
+        justify-content: center;
+       
+        flex-direction: column;
+    
+    }
+  
+    #titulobanner{
+        width:  100%;
+        padding: 20px;
+        text-align: center;
+        height: 80%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+    }
+    #titulobanner > h1{
+        font-size: 2rem;
+        font-family: 'Geomanist';
+        font-weight: bolder;
+    
+    }
+    #titulobanner > h2{
+        font-family: 'Simplifica';
+        letter-spacing: 5px;
+    
+    }
+    #titulobanner > p{
+        font-family: 'Agdasima';
+        font-size: 1.5rem;
+        font-weight: 400;
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+
 @media (max-height: 700px), (max-width: 390px) {
-    #conteudo{
+         #conteudo{
         width: 100%;
         height: 150vh;
         display: flex;
