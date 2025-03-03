@@ -2194,6 +2194,7 @@ nav > span > a::before{
         align-items: center;
         justify-content: space-evenly;
         }
+        
         #sobrenos{
         width: 90%;
         height: auto;
@@ -2221,6 +2222,33 @@ nav > span > a::before{
         }
         footer{
             height: 100vh;
+        }
+        #redesociais{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            
+            align-items: center;
+            height: 90%;
+            width: 100%;
+        }
+        .redes{
+            display: flex;
+        
+            gap: 10px;
+            font-size: 1.3rem;
+            font-family: 'Roboto';
+            letter-spacing: 2px;
+            align-items: center;
+          
+        }
+        .redes > a{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logoapp[src^="assets/imgs/Logos app/Linkedin.webp"] {
+            width: 80px;
         }
 }
 
