@@ -2186,7 +2186,43 @@ nav > span > a::before{
     
     }
 }
-
+@media (max-height: 700px), (max-width: 390px) {
+    #conteudo{
+        width: 100%;
+        height: 150vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        }
+        #sobrenos{
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: relative;
+        align-items: center;
+        }
+        #sobrenos > h1{
+        font-size: 1.7rem;
+        font-family: 'Geomanist';
+    
+        }
+        #texto{
+        font-size: 1.2rem;
+        font-family: 'agdasima';
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    
+        }
+        #texto > p{
+        text-align: center;
+        }
+        footer{
+            height: 100vh;
+        }
+}
 
 
 
